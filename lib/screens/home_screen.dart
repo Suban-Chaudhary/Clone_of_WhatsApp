@@ -8,7 +8,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   TabController tabController;
-
+  
   @override
   void initState() {
     super.initState();
@@ -18,6 +18,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.teal[500],
+        onPressed: () {},
+        child: Icon(
+          Icons.message,
+          color: Colors.white,
+        ),
+      ),
       appBar: AppBar(
         title: Text(
           "WhatsApp",
@@ -42,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           isScrollable: true,
           tabs: [
             Container(
-              width: MediaQuery.of(context).size.width*0.05,
+              width: MediaQuery.of(context).size.width * 0.05,
               child: Tab(
                 icon: Icon(
                   Icons.camera_alt,
@@ -50,15 +58,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
             ),
             Container(
-              width: MediaQuery.of(context).size.width*0.21,
+              width: MediaQuery.of(context).size.width * 0.21,
               child: Tab(child: Text("CHATS")),
             ),
             Container(
-              width: MediaQuery.of(context).size.width*0.21,
+              width: MediaQuery.of(context).size.width * 0.21,
               child: Tab(child: Text("STATUS")),
             ),
             Container(
-              width: MediaQuery.of(context).size.width*0.21,
+              width: MediaQuery.of(context).size.width * 0.21,
               child: Tab(child: Text("CALLS")),
             ),
           ],

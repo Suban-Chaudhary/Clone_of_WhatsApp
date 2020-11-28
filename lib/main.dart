@@ -1,6 +1,6 @@
 // import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/screens/home_screen.dart';
+import 'package:whatsapp_clone/screens/login_screen.dart';
 
 void main() async {
   // WidgetsFlutterBinding.ensureInitialized();
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: LoginScreen(),
       debugShowCheckedModeBanner: false,
       title: "WhatsApp Clone",
       theme: ThemeData(

@@ -10,11 +10,6 @@ class _ChatListScreenState extends State<ChatListScreen> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.teal[500],
-          onPressed: (){},
-          child: Icon(Icons.message, color: Colors.white,),
-        ),
         body: Center(
           child: Text("Chat List screen"),
         ),
